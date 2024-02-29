@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        display: flex;
+        position: relative;
+        left: 20px;
+    }
+    .container1{
+        position: relative;
+        right: 70px;
+    }
+    
+</style>
+<body>
+    
+    <div class="container">
+        <div class="mt-5 ms-0 me-1 mb-5 col-lg-4 col-sm-12">
+        <div class="card" style="width: 18rem;">
+            <div class="card-header text-center">India</div>
+            <img src="https://cdn.britannica.com/97/1597-004-05816F4E/Flag-India.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Capital: New Delhi <br> Region: Asia <br> CountryCode: IND</p>
+              <a href="#" class="btn btn-primary" id="NewDelhi" onclick="getData1()">Click for weather</a>
+            </div>
+            <div class="card" style="width: 18rem; display: none;" id="weatherContainer"></div>
+    </div>
+</div>
+    <div class="container1">
+        <div class="mt-5 ms-0 me-1 mb-5 col-lg-4 col-sm-12">
+    <div class="card" style="width: 18rem;">
+        <div class="card-header text-center">United States of America</div>
+        <img src="https://cdn.britannica.com/33/4833-004-828A9A84/Flag-United-States-of-America.jpg" height="190px" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Capital: Washington D.C <br> Region: United States of America <br> CountryCode: USA</p>
+          <a href="#" class="btn btn-primary" id="Washington" onclick="getData2()">Click for weather</a>
+        </div>
+        </div>
+        <div class="card" style="width: 18rem; display: none;" id="weatherContainer1"></div>
+  </div>
+    </div>
+
+    <div class="container2">
+        <div class="mt-5 ms-0 me-1 mb-5 col-lg-4 col-sm-12">
+            <div class="card" style="width: 18rem;">
+                <div class="card-header text-center">Afghanistan</div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Flag_of_Afghanistan_%282013%E2%80%932021%29.svg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Capital: Kabul <br> Region: Asia <br> CountryCode: AFG</p>
+                  <a href="#" class="btn btn-primary" id="Kabul" onclick="getData()">Click for weather</a>
+                </div>
+                </div>
+                <div class="card" style="width: 18rem; display: none;" id="weatherContainer2"></div>
+          </div>  
+
+    </div>
+   <script src="script1.js"></script>
+</body>
+</html>
